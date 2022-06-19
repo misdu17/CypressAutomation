@@ -1,0 +1,33 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress run",
+    "headTest": "npm run test -- --headed",
+    "chromeTest": "npm run test -- --browser chrome",
+    "recordDashBoardTest": "npm run test -- --record --key b60fbb52-d842-40b7-ae06-95ad70f51e57 --reporter mochawesome",
+    "testSpecificFolder": "npm run test -- --spec \"cypress/integration/basics/*\"",
+    "runBDD": "node_modules\\.bin\\cypress run --spec cypress\\integration\\examples\\BDD\\ecommerce.feature --headed --browser chrome"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^9.7.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-iframe": "^1.0.1",
+    "mocha": "^10.0.0",
+    "mochawesome": "^7.1.3",
+    "neat-csv": "5.1.0"
+  }
+}

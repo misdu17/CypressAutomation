@@ -1,0 +1,130 @@
+[
+  {
+    "description": "    application regression",
+    "keyword": "Feature",
+    "name": "End to end Ecommerce validation",
+    "line": 1,
+    "id": "end-to-end-ecommerce-validation",
+    "tags": [],
+    "uri": "ecommerce.feature",
+    "elements": [
+      {
+        "id": "end-to-end-ecommerce-validation;ecommerce-product-delivery",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Ecommerce product delivery",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open ecommerce page",
+            "result": {
+              "status": "passed",
+              "duration": 1165000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I add items to cart",
+            "result": {
+              "status": "passed",
+              "duration": 4043000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Validate the total price",
+            "result": {
+              "status": "passed",
+              "duration": 275000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "select the country submit and verify Thankyou",
+            "result": {
+              "status": "passed",
+              "duration": 5834000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-ecommerce-validation;filling-the-form-to-shop",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Filling the form to shop",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I open ecommerce page",
+            "result": {
+              "status": "passed",
+              "duration": 1448000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "gender"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "syful",
+                      "Male"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I fill the form details",
+            "result": {
+              "status": "passed",
+              "duration": 462000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "validate the forms behaviour",
+            "result": {
+              "status": "passed",
+              "duration": 122000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "select the Shop Page",
+            "result": {
+              "status": "passed",
+              "duration": 665000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
